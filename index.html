@@ -4,22 +4,22 @@
     <title>How feels your writing?</title>
       <meta name='viewport' content='width=device-width, initial-scale=1'>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="feels.css">
   </head>
   <body>
 
   	<div ng-controller="feelsCtrl as thing">
-    	This is a page yes.
-<h2>My Note</h2>
+    	<h2>Enter text and see the evaluation score (green = positive, red = negative...bigger is more positive/negative)</h2>
 
 <p><textarea ng-model="message" cols="40" rows="10"></textarea></p>
 
 <p>
-<button ng-click="thing.check()">Check</button>
-<button ng-click="thing.clear()">Clear</button>
+<button class="btn btn-default btn-lg" ng-click="thing.check()">Check</button>
+<button class="btn btn-default btn-lg" ng-click="thing.clear()">Clear</button>
 </p>
 
-<div>
+<div class="container" style="width: 100%;word-wrap: break-word;">
 <span ng-repeat="blah in thing.results" ng-class="blah.class" ng-bind="blah.sentence"></span>&nbsp; 
 </div>
 
