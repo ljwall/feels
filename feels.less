@@ -4,9 +4,12 @@
 .make-some(@n) when (@n >= 0) {
   .negative-@{n} {
       background-color: lighten(@negative-bg, ((10 - @n)/2) * 10%);
+      font-size:  (1 + @n / 5)em;
+
   }
   .positive-@{n} {
       background-color: lighten(@positive-bg, ((10 - @n)/2) * 10% );
+      font-size:  (1 + @n / 5)em;
   }
   .make-some(@n - 1);
 }
