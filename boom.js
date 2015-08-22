@@ -10,7 +10,7 @@ angular.module('feels', [ ])
     this.check  = function() {
     	self.results = [];
     	var sentence = ($scope.message);
-    	var arr = (sentence.split('.'));
+    	var arr = (sentence.split(' '));
     	var sentArr = [];
     	var score, crass;
     	for (var i = 0; i < arr.length; i++) {
