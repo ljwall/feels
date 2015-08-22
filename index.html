@@ -19,6 +19,11 @@
 <button class="btn btn-default btn-lg btn-success" ng-click="thing.clear()">Clear</button>
 </div>
 
+<div>
+<span class="positive-3">Positive score: {{thing.summary.pos}}</span>
+<span class="negative-3">Negative score: {{thing.summary.neg}}</span>
+</div>
+
 <div style="width: 100%;word-wrap: break-word;">
 <span ng-repeat="blah in thing.results" ng-class="blah.class" ng-bind="blah.sentence"></span>&nbsp;
 </div>
