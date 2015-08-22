@@ -15,10 +15,10 @@ angular.module('feels', [ ])
     	for (var i = 0; i < arr.length; i++) {
     		score = sentiment(arr[i]).score;
     		if (score < 0) {
-    			crass = "negative-" + Math.min(10, -score);
+    			crass = "negative-" + Math.min(5, -score);
     		}
     		else {
-    			crass = "positive-" + Math.min(10, score);
+    			crass = "positive-" + Math.min(5, score);
     		}
     		self.results.push({"class" : crass, "sentence" : arr[i],"score" : score});
     	};
