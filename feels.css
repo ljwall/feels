@@ -1,66 +1,88 @@
 .negative-10 {
   background-color: #ff0000;
+  font-size: 3 em;
 }
 .positive-10 {
   background-color: #08ff00;
+  font-size: 3 em;
 }
 .negative-9 {
   background-color: #ff1a1a;
+  font-size: 2.8 em;
 }
 .positive-9 {
   background-color: #21ff1a;
+  font-size: 2.8 em;
 }
 .negative-8 {
   background-color: #ff3333;
+  font-size: 2.6 em;
 }
 .positive-8 {
   background-color: #3aff33;
+  font-size: 2.6 em;
 }
 .negative-7 {
   background-color: #ff4d4d;
+  font-size: 2.4 em;
 }
 .positive-7 {
   background-color: #52ff4d;
+  font-size: 2.4 em;
 }
 .negative-6 {
   background-color: #ff6666;
+  font-size: 2.2 em;
 }
 .positive-6 {
   background-color: #6bff66;
+  font-size: 2.2 em;
 }
 .negative-5 {
   background-color: #ff8080;
+  font-size: 2 em;
 }
 .positive-5 {
   background-color: #84ff80;
+  font-size: 2 em;
 }
 .negative-4 {
   background-color: #ff9999;
+  font-size: 1.8 em;
 }
 .positive-4 {
   background-color: #9cff99;
+  font-size: 1.8 em;
 }
 .negative-3 {
   background-color: #ffb3b3;
+  font-size: 1.6 em;
 }
 .positive-3 {
   background-color: #b5ffb3;
+  font-size: 1.6 em;
 }
 .negative-2 {
   background-color: #ffcccc;
+  font-size: 1.4 em;
 }
 .positive-2 {
   background-color: #ceffcc;
+  font-size: 1.4 em;
 }
 .negative-1 {
   background-color: #ffe5e5;
+  font-size: 1.2 em;
 }
 .positive-1 {
   background-color: #e6ffe5;
+  font-size: 1.2 em;
 }
 .negative-0 {
   background-color: #ffffff;
+  font-size: 1 em;
 }
 .positive-0 {
   background-color: #ffffff;
+  font-size: 1 em;
 }
