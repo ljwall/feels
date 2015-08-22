@@ -18,9 +18,8 @@
 <button ng-click="thing.clear()">Clear</button>
 </p>
 
-<div ng-repeat="blah in thing.results">
-<span ng-class="blah.class">{{blah.sentence}}</span>
-{{blah.score}}
+<div>
+<span ng-repeat="blah in thing.results" ng-class="blah.class">{{blah.sentence}}</span>
 </div>
 <!-- <p>Number of characters left: <span ng-bind="left()"></span></p> -->
 
