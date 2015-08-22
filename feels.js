@@ -3,8 +3,27 @@ var sentiment = require('sentiment');
 angular.module('feels', [ ])
 
 .controller("feelsCtrl", function($scope) {
-	//this.message = "";
+	var self = this;
 	this.clear = function() {$scope.message = "";};
-    this.save  = function() {alert($scope.message);};
+	this.results = [];
+    this.check  = function() {
+    	self.results = [];
+    	var sentence = ($scope.message);
+    	var arr = (sentence.split('.'));
+    	var sentArr = [];
+    	var score, crass;
+    	for (var i = 0; i < arr.length; i++) {
+    		score = sentiment(arr[i]).score;
+    		if (score < 0) {
+    			crass = "negative-" + Math.min(10, -score);
+    		}
+    		else {
+    			crass = "positive-" + Math.min(10, score);
+    		}
+    		self.results.push({"class" : crass, "sentence" : arr[i],"score" : score});
+    	};
+    	// alert(sentiment($scope.message).score);
+    		// console.log(self.results);
+    };
 	//do sentiment analysis
-})
+});

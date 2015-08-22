@@ -13,13 +13,17 @@
 <p><textarea ng-model="message" cols="40" rows="10"></textarea></p>
 
 <p>
-<button ng-click="thing.save()">Save</button>
+<button ng-click="thing.check()">Check</button>
 <button ng-click="thing.clear()">Clear</button>
 </p>
 
+<div ng-repeat="blah in thing.results">
+<span ng-class="blah.class">{{blah.sentence}}</span>
+{{blah.score}}
+</div>
 <!-- <p>Number of characters left: <span ng-bind="left()"></span></p> -->
 
 	</div>
-    <script src="feels.js"></script>
+    <script src="boom.js"></script>
   </body>
 </html>
