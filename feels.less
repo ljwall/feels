@@ -3,15 +3,15 @@
 
 .make-some(@n) when (@n >= 0) {
   .negative-@{n} {
-      background-color: lighten(@negative-bg, ((10 - @n)/2) * 10%);
-      font-size:  (1em + @n/2);
+      background-color: lighten(@negative-bg, (5 - @n) * 10%);
+      font-size:  (1em + @n * 4/5);
 
   }
   .positive-@{n} {
-      background-color: lighten(@positive-bg, ((10 - @n)/2) * 10% );
-      font-size:  (1em + @n/2);
+      background-color: lighten(@positive-bg, (5 - @n) * 10% );
+      font-size:  (1em + @n * 4/5);
   }
   .make-some(@n - 1);
 }
 
-.make-some(10);
+.make-some(5);
