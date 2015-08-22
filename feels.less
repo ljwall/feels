@@ -2,10 +2,10 @@
 @negative-bg:  hsla(360, 100%, 50%, 1);
 
 .make-some(@n) when (@n >= 0) {
-  .negative-bg-@{n} {
+  .negative-@{n} {
       background-color: lighten(@negative-bg, ((10 - @n)/2) * 10%);
   }
-  .positive-bg-@{n} {
+  .positive-@{n} {
       background-color: lighten(@positive-bg, ((10 - @n)/2) * 10% );
   }
   .make-some(@n - 1);
