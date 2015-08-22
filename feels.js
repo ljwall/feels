@@ -1,3 +1,5 @@
+var sentiment = require('sentiment');
+
 angular.module('feels', [ ])
 
 .controller("feelsCtrl", function($scope) {
