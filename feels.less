@@ -5,11 +5,12 @@
   .negative-@{n} {
       background-color: lighten(@negative-bg, (5 - @n) * 10%);
       font-size:  (1em + @n * 4/5);
-
+      margin-right: 0.15em;
   }
   .positive-@{n} {
       background-color: lighten(@positive-bg, (5 - @n) * 10% );
       font-size:  (1em + @n * 4/5);
+      margin-right: 0.15em;
   }
   .make-some(@n - 1);
 }
