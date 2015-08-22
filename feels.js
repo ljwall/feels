@@ -22,8 +22,5 @@ angular.module('feels', [ ])
     		}
     		self.results.push({"class" : crass, "sentence" : arr[i],"score" : score});
     	};
-    	// alert(sentiment($scope.message).score);
-    		// console.log(self.results);
     };
-	//do sentiment analysis
 });
