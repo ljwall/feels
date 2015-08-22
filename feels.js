@@ -4,7 +4,7 @@ angular.module('feels', [ ])
 
 .controller("feelsCtrl", function($scope) {
 	var self = this;
-	this.clear = function() {$scope.message = "";};
+	this.clear = function() {$scope.message = ""; self.results = []};
 	this.results = [];
     this.check  = function() {
     	self.results = [];

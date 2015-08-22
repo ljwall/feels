@@ -12,12 +12,12 @@
   	<div class="container" ng-controller="feelsCtrl as thing">
     	<h2>Enter text and see the evaluation score (green = positive, red = negative...bigger is more positive/negative)</h2>
 
-<p><textarea ng-model="message" cols="40" rows="10"></textarea></p>
+<p><textarea style="width: 100%;" ng-model="message" cols="40" rows="10"></textarea></p>
 
-<p>
-<button class="btn btn-default btn-lg" ng-click="thing.check()">Check</button>
-<button class="btn btn-default btn-lg" ng-click="thing.clear()">Clear</button>
-</p>
+<div>
+<button class="btn btn-default btn-lg btn-primary" ng-click="thing.check()">Check</button>
+<button class="btn btn-default btn-lg btn-success" ng-click="thing.clear()">Clear</button>
+</div>
 
 <div class="container" style="width: 100%;word-wrap: break-word;">
 <span ng-repeat="blah in thing.results" ng-class="blah.class" ng-bind="blah.sentence"></span>&nbsp; 
