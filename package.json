@@ -1,0 +1,23 @@
+{
+  "name": "feels",
+  "version": "1.0.0",
+  "description": "How does your writting feel?",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ljwall/feels.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ljwall/feels/issues"
+  },
+  "homepage": "https://github.com/ljwall/feels",
+  "dependencies": {
+    "angular": "^1.4.4",
+    "sentiment": "^1.0.2"
+  }
+}
